@@ -52,7 +52,6 @@ class HeartBeat:
         mask_upper  = (z <= Z_STATIC_START) & (z > Z_MID_SPLIT)
         mask_lower  = z <= Z_MID_SPLIT
 
-        # --- 2. CALCULATE PUMP ---
         cycle = np.sin(t * 10.0)
         strength1 = 0.1
         strength2 = 0.15 
