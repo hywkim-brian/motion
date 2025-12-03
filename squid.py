@@ -4,7 +4,7 @@ from matplotlib.animation import FuncAnimation
 from mpl_toolkits.mplot3d import Axes3D
 import os
 
-FILE_NAME = "./meshes/blub.obj"  
+FILE_NAME = "./meshes/Squid_Lure_lowres.obj"  
 SWIM_SPEED = 8.0        
 WAVE_FREQ = 1.5         
 TAIL_SWING = 0.3        
