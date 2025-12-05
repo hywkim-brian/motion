@@ -51,16 +51,13 @@ class HeartBeat:
         mask_static = z > Z_STATIC_START
         mask_upper  = (z <= Z_STATIC_START) & (z > Z_MID_SPLIT)
         mask_lower  = z <= Z_MID_SPLIT
-
         cycle = np.sin(t * 10.0)
         strength1 = 0.1
         strength2 = 0.15 
-
         radial_scale = np.ones(len(v))
         
         # Upper Heart (Atria) - Contract on Positive
         radial_scale[mask_upper] = 1.0 - (cycle * strength1)
-
         # Lower Heart (Ventricles) - Contract on Negative (Anti-phase)
         radial_scale[mask_lower] = 1.0 + (cycle * strength2)
         target_lower  = 1.0 + (cycle * strength2)
