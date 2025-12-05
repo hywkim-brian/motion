@@ -1,0 +1,8 @@
+numpy
+matplotlib
+scipy
+torch
+smplx
+trimesh[easy]
+fast-simplification
+scikit-image
